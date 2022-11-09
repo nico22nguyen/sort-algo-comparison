@@ -21,7 +21,7 @@ def counting_sort(arr):
 def insertion_sort(arr):
   for i in range(len(arr)):
     if i % 1000 == 0:
-      print(f'Insertion sort: {str(i)}/{str(len(arr))} ({i / len(arr)} %')
+      print(f'Insertion sort: {str(i)}/{str(len(arr))} ({round(i * 100 / len(arr), 2)} %)')
     j = i + 1
     if j >= len(arr) or arr[i] <= arr[j]:
       continue
@@ -37,7 +37,7 @@ def insertion_sort(arr):
 def selection_sort(arr):
   for i in range(len(arr)):
     if i % 1000 == 0:
-      print(f'Selection sort: {str(i)}/{str(len(arr))} ({i / len(arr)} %')
+      print(f'Selection sort: {str(i)}/{str(len(arr))} ({round(i * 100 / len(arr), 2)} %)')
     min_index = i
     for j in range(i + 1, len(arr)):
       if arr[j] < arr[min_index]:
