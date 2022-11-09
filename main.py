@@ -49,11 +49,11 @@ print_arr_to_file('outputs/heap_sort.txt', sortfns.heap_sort(copies[5]))
 times[5] = time.time() - heap_sort_start
 
 times_summary = [
-  'Counting sort: ' + str(times[0] * 1000) + ' ms',
-  'Insertion sort: ' + str(times[1] * 1000) + ' ms',
-  'Selection sort: ' + str(times[2] * 1000) + ' ms',
-  'Quick sort: ' + str(times[3] * 1000) + ' ms',
-  'Merge sort: ' + str(times[4] * 1000) + ' ms',
-  'Heap sort: ' + str(times[5] * 1000) + ' ms'
+  'Counting sort: ' + str(times[0]) + ' s',
+  'Insertion sort: ' + str(times[1]) + ' s',
+  'Selection sort: ' + str(times[2]) + ' s',
+  'Quick sort: ' + str(times[3]) + ' s',
+  'Merge sort: ' + str(times[4]) + ' s',
+  'Heap sort: ' + str(times[5]) + ' s'
 ]
 print_arr_to_file('outputs/times_summary.txt', times_summary)
