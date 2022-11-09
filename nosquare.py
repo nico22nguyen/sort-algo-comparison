@@ -29,15 +29,15 @@ print_arr_to_file('outputs/counting_sort.txt', sortfns.counting_sort(copies[0]))
 times[0] = time.time() - counting_sort_start
 quick_sort_start = time.time()
 print_arr_to_file('outputs/quick_sort.txt', sortfns.quick_sort(copies[1]))
-times[3] = time.time() - quick_sort_start
+times[1] = time.time() - quick_sort_start
 
 merge_sort_start = time.time()
 print_arr_to_file('outputs/merge_sort.txt', sortfns.merge_sort(copies[2]))
-times[4] = time.time() - merge_sort_start
+times[2] = time.time() - merge_sort_start
 
 heap_sort_start = time.time()
 print_arr_to_file('outputs/heap_sort.txt', sortfns.heap_sort(copies[3]))
-times[5] = time.time() - heap_sort_start
+times[3] = time.time() - heap_sort_start
 
 times_summary = [
   'Counting sort: ' + str(times[0]) + ' s',
