@@ -25,27 +25,27 @@ copies = [nums.copy() for _ in range(6)]
 times = [0 for _ in range(6)]
 
 counting_sort_start = time.time()
-print_arr_to_file('outputs/counting_sort.txt', sortfns.counting_sort(copies[0]))
+print_arr_to_file('outputs/counting_sort_sorted.txt', sortfns.counting_sort(copies[0]))
 times[0] = time.time() - counting_sort_start
 
 insertion_sort_start = time.time()
-print_arr_to_file('outputs/insertion_sort.txt', sortfns.insertion_sort(copies[1]))
+print_arr_to_file('outputs/insertion_sort_sorted.txt', sortfns.insertion_sort(copies[1]))
 times[1] = time.time() - insertion_sort_start
 
 selection_sort_start = time.time()
-print_arr_to_file('outputs/selection_sort.txt', sortfns.selection_sort(copies[2]))
+print_arr_to_file('outputs/selection_sort_sorted.txt', sortfns.selection_sort(copies[2]))
 times[2] = time.time() - selection_sort_start
 
 quick_sort_start = time.time()
-print_arr_to_file('outputs/quick_sort.txt', sortfns.quick_sort(copies[3]))
+print_arr_to_file('outputs/quick_sort_sorted.txt', sortfns.quick_sort(copies[3]))
 times[3] = time.time() - quick_sort_start
 
 merge_sort_start = time.time()
-print_arr_to_file('outputs/merge_sort.txt', sortfns.merge_sort(copies[4]))
+print_arr_to_file('outputs/merge_sort_sorted.txt', sortfns.merge_sort(copies[4]))
 times[4] = time.time() - merge_sort_start
 
 heap_sort_start = time.time()
-print_arr_to_file('outputs/heap_sort.txt', sortfns.heap_sort(copies[5]))
+print_arr_to_file('outputs/heap_sort_sorted.txt', sortfns.heap_sort(copies[5]))
 times[5] = time.time() - heap_sort_start
 
 times_summary = [
